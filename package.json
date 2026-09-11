@@ -1,0 +1,41 @@
+{
+  "name": "ts-env-guard",
+  "version": "1.0.0",
+  "description": "A type-safe environment variable validator for Node.js applications.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./errors": {
+      "types": "./dist/errors.d.ts",
+      "import": "./dist/errors.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test dist-test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "typescript": "^5.9"
+  },
+  "keywords": [
+    "env",
+    "environment",
+    "validation",
+    "type-safe",
+    "schema",
+    "node"
+  ],
+  "license": "MIT"
+}
